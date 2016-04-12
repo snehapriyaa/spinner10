@@ -11,22 +11,12 @@ import android.widget.Spinner;
 
 
 public class MainActivity extends Activity {
-    Spinner spinner;
-    String colours[]={"red","yellow","green","blue"};
-    String tag = "Mainactivity";
-
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        spinner = (Spinner)findViewById(R.id.spinner);
-        Log.d(tag,"............................spinnner");
-        ArrayAdapter<String> adapter = new ArrayAdapter(MainActivity.this,android.R.layout.simple_spinner_dropdown_item,colours
-        );
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        spinner.setAdapter(adapter);
     }
 
     @Override
