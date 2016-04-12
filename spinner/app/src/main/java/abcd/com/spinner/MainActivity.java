@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
         userList = new ArrayList<mClient>();
 
-        ServerThread mchatServerThread = new ServerThread();
-        mchatServerThread.start();
+        ServerThread mServerThread = new ServerThread();
+        mServerThread.start();
     }
 
     @Override
